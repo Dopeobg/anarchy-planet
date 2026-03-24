@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anarchy VPN - Безопасный доступ к интернету</title>
+    <meta name="description" content="Anarchy VPN — сервис для защиты интернет-соединения и повышения конфиденциальности. Современные протоколы шифрования, политика no-logs.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- Preload fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="preload" as="style">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header id="navbar" class="navbar">
+        <nav class="navbar__container">
+            <div class="navbar__logo">
+                <div class="logo-symbol">Ⓐ</div>
+                <span class="navbar__title">Anarchy VPN</span>
+            </div>
+            
+            <ul class="navbar__menu">
+                <li><a href="#features" class="nav-link">Функции</a></li>
+                <li><a href="#pricing" class="nav-link">Цены</a></li>
+                <li><a href="#download" class="nav-link">Скачать</a></li>
+            </ul>
+            
+            <button class="hamburger" id="hamburger">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+            </button>
+            
+            <a href="https://sub.anarchy-planet.ru/ZqUV0t8orAqFg_gJ" class="btn btn--outline" id="navGetStarted">Начать</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <canvas id="canvas-bg" class="canvas-background"></canvas>
+            
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    VPN нового поколения
+                </h1>
+                
+                <p class="hero__description">
+                    Anarchy VPN — это сервис для защиты интернет-соединения и повышения конфиденциальности при работе в сети. Мы используем современные протоколы и шифрование, чтобы снизить риски перехвата данных и обеспечить стабильный доступ к онлайн-ресурсам.
+                </p>
+                
+                <div class="hero__buttons">
+                    <a href="https://sub.anarchy-planet.ru/ZqUV0t8orAqFg_gJ" class="btn btn--primary">Начать бесплатно</a>
+                    <button class="btn btn--outline-white">Посмотреть функции →</button>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <div class="scroll-indicator__wheel"></div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="stats">
+            <div class="stats__container">
+                <div class="stats__item">
+                    <div class="stats__number" data-target="3">0</div>
+                    <div class="stats__label">Серверы</div>
+                </div>
+                <div class="stats__item">
+                    <div class="stats__number" data-target="24">0</div>
+                    <div class="stats__label">Поддержка</div>
+                </div>
+                <div class="stats__item">
+                    <div class="stats__number" data-target="10">0</div>
+                    <div class="stats__label">Гбит/с скорость</div>
+                </div>
+                <div class="stats__item">
+                    <div class="stats__number" data-target="0">0</div>
+                    <div class="stats__label">Логи</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">Возможности Anarchy VPN</h2>
+                
+                <div class="features__grid">
+                    <!-- Platform Support -->
+                    <div class="feature-card">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="3" width="7" height="7" stroke="currentColor" stroke-width="2" rx="1"/>
+                            <rect x="15" y="3" width="7" height="7" stroke="currentColor" stroke-width="2" rx="1"/>
+                            <rect x="2" y="14" width="7" height="7" stroke="currentColor" stroke-width="2" rx="1"/>
+                            <rect x="15" y="14" width="7" height="7" stroke="currentColor" stroke-width="2" rx="1"/>
+                        </svg>
+                        <h3 class="feature-card__title">Поддержка популярных платформ</h3>
+                        <p class="feature-card__description">Приложения и конфигурации для: Windows, macOS, Linux, iOS, Android, роутеры (при ручной настройке)</p>
+                    </div>
+
+                    <!-- Performance -->
+                    <div class="feature-card">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12h18M9 6l5 6-5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h3 class="feature-card__title">Производительность и стабильность</h3>
+                        <p class="feature-card__description">Используются современные VPN-протоколы (например, WireGuard и OpenVPN), которые обеспечивают баланс между скоростью и безопасностью соединения.</p>
+                    </div>
+
+                    <!-- Encryption -->
+                    <div class="feature-card">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="5" y="11" width="14" height="8" stroke="currentColor" stroke-width="2" rx="1"/>
+                            <path d="M8 11V7a4 4 0 0 1 8 0v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="12" cy="15" r="1" fill="currentColor"/>
+                        </svg>
+                        <h3 class="feature-card__title">Шифрование данных</h3>
+                        <p class="feature-card__description">Применяются криптографические алгоритмы уровня AES-256 и защищённые туннели передачи данных. Это соответствует отраслевым стандартам защиты информации.</p>
+                    </div>
+
+                    <!-- Privacy Policy -->
+                    <div class="feature-card">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 12s3.5-8 10-8 10 8 10 8-3.5 8-10 8-10-8-10-8z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                            <line x1="3" y1="3" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <h3 class="feature-card__title">Политика конфиденциальности</h3>
+                        <p class="feature-card__description">Anarchy VPN заявляет политику no-logs — отсутствие хранения истории пользовательской активности.</p>
+                    </div>
+
+                    <!-- Auto Server Selection -->
+                    <div class="feature-card">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="15" cy="9" r="1.5" fill="currentColor"/>
+                            <circle cx="9" cy="15" r="1.5" fill="currentColor"/>
+                        </svg>
+                        <h3 class="feature-card__title">Автоматический выбор сервера</h3>
+                        <p class="feature-card__description">Система подключает пользователя к наиболее подходящему серверу на основе доступности и задержки.</p>
+                    </div>
+
+                    <!-- Transparent Pricing -->
+                    <div class="feature-card">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 7v10M9 9h6a1 1 0 0 0 0-2h-6a1 1 0 0 1 0-2h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <h3 class="feature-card__title">Прозрачная модель оплаты</h3>
+                        <p class="feature-card__description">Фиксированные тарифы. Без скрытых платежей. Понятные условия использования.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <h2 class="section-title">Тарифные планы</h2>
+                
+                <div class="pricing__grid">
+                    <!-- Basic Plan -->
+                    <div class="pricing-card">
+                        <h3 class="pricing-card__name">Базовый</h3>
+                        <div class="pricing-card__price">
+                            <span class="pricing-card__currency">₽</span>
+                            <span class="pricing-card__amount">150</span>
+                            <span class="pricing-card__period">/месяц</span>
+                        </div>
+                        <ul class="pricing-card__features">
+                            <li>1 устройство</li>
+                            <li>1 локация</li>
+                        </ul>
+                        <a href="https://sub.anarchy-planet.ru/ZqUV0t8orAqFg_gJ" class="btn btn--outline">Выбрать план</a>
+                    </div>
+
+                    <!-- Pro Plan (Highlighted) -->
+                    <div class="pricing-card pricing-card--featured">
+                        <div class="pricing-card__badge">Самый популярный</div>
+                        <h3 class="pricing-card__name">Про</h3>
+                        <div class="pricing-card__price">
+                            <span class="pricing-card__currency">₽</span>
+                            <span class="pricing-card__amount">250</span>
+                            <span class="pricing-card__period">/месяц</span>
+                        </div>
+                        <ul class="pricing-card__features">
+                            <li>До 3 устройств</li>
+                            <li>3 локации на выбор</li>
+                            <li>Поддержка всех функций сервиса</li>
+                        </ul>
+                        <a href="https://sub.anarchy-planet.ru/ZqUV0t8orAqFg_gJ" class="btn btn--primary">Начать бесплатно</a>
+                    </div>
+
+                    <!-- Anarchist Plan -->
+                    <div class="pricing-card">
+                        <h3 class="pricing-card__name">Анархист</h3>
+                        <div class="pricing-card__price">
+                            <span class="pricing-card__currency">₽</span>
+                            <span class="pricing-card__amount">350</span>
+                            <span class="pricing-card__period">/месяц</span>
+                        </div>
+                        <ul class="pricing-card__features">
+                            <li>До 5 устройств</li>
+                            <li>3 локации на выбор</li>
+                            <li>Максимальная доступная производительность</li>
+                            <li>Расширенные возможности (при наличии)</li>
+                        </ul>
+                        <a href="https://sub.anarchy-planet.ru/ZqUV0t8orAqFg_gJ" class="btn btn--outline">Выбрать план</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="cta__background"></div>
+            <div class="cta__content">
+                <h2 class="cta__title">Для чего подходит VPN</h2>
+                <p class="cta__description">
+                    Anarchy VPN может использоваться для:<br><br>
+                    • Защиты данных в публичных Wi-Fi сетях<br>
+                    • Снижения отслеживания интернет-активности<br>
+                    • Безопасного удалённого доступа<br>
+                    • Обхода сетевых ограничений (в рамках законодательства пользователя)
+                </p>
+                <div class="cta__buttons">
+                    <a href="https://sub.anarchy-planet.ru/ZqUV0t8orAqFg_gJ" class="btn btn--primary">Подключайтесь за минуты</a>
+                    <p class="cta__subtitle">Простая настройка и быстрый старт без сложных конфигураций.</p>
+                    <div class="cta__actions">
+                        <button class="btn btn--outline">Скачать приложение</button>
+                        <a href="https://sub.anarchy-planet.ru/ZqUV0t8orAqFg_gJ" class="btn btn--outline">Начать использование</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <div class="logo-symbol">Ⓐ</div>
+                    <div>
+                        <h3>Anarchy VPN</h3>
+                        <p>Инструмент для защиты соединения и повышения конфиденциальности</p>
+                    </div>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4>Разделы</h4>
+                        <ul>
+                            <li><a href="#features">Функции</a></li>
+                            <li><a href="#pricing">Цены</a></li>
+                            <li><a href="#servers">Серверы</a></li>
+                            <li><a href="#download">Скачать</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4>Соцсети</h4>
+                        <ul>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">GitHub</a></li>
+                            <li><a href="#">Reddit</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 Anarchy VPN. Нулевые логи. Никаких хозяев.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/canvas.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
